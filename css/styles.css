@@ -126,6 +126,14 @@ footer{
     padding: 0.5em 0;
     margin-top: 1em;
     text-align: center;
+    border-top: #000000 2px solid;
+    /* Gradiente del footer */
+background: #5f74af; /* Old browsers */
+background: -moz-linear-gradient(top,  #5f74af 0%, #090997 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #5f74af 0%,#090997 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #5f74af 0%,#090997 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f74af', endColorstr='#090997',GradientType=0 ); /* IE6-9 */
+
 }
 
 main{
@@ -327,9 +335,7 @@ box-sizing: border-box;
 -moz-filter: drop-shadow(-12px 14px 9px #000000);
 
   box-sizing: border-box;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+ 
 }
 
 
@@ -361,12 +367,15 @@ box-sizing: border-box;
 
 /* El contenido lo ajusto al 100% */
 #Contenido{
-    width: 100%;
+    width: 90%;
 }
 
 }
 @media screen and (max-width: 600px){
 
+  .Persona{
+    width: 100%;
+  }
   .Servicio .ImagenServicio{
     width: 100%;
 
