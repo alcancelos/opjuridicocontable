@@ -208,14 +208,15 @@ filter: drop-shadow(-12px 14px 9px #000000);
 
 .Persona{
   width: 30%;
-  border: 1px solid gray;
+  border: 1px solid var(--MarronFav);
   border-radius: 0.25em;
   float: left;
   margin-left: 2.25%;
   box-sizing: border-box;
   text-align: center;
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,06a9db+100 */
-background: #87e0fd; /* Old browsers */
+  transition:all 0.8s ease;  
+ /* Gradiente*/
+ background: #87e0fd; /* Old browsers */
 background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #06a9db 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -224,7 +225,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', end
 }
 
 .Persona:hover{
- /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7afffc+0,62cbfc+44,43bdf9+100 */
+ /* Gradiente*/
 background: #7afffc; /* Old browsers */
 background: -moz-linear-gradient(top,  #7afffc 0%, #62cbfc 44%, #43bdf9 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); /* Chrome10-25,Safari5.1-6 */
@@ -259,7 +260,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', end
 
 .Persona p{
   font-size: 0.7em;
-  color: #444;
+  color: rgb(14, 9, 20);
   margin: 0 1em 1em;
 }
 
@@ -275,9 +276,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', end
 }
 
 .Servicio{
-  border: 1px solid gray;
+  width: 98%;
+  border: 1px solid var(--MarronFav);
   border-radius: 0.7em;
-  margin: 1em 0;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
   padding: 1em;
   overflow: hidden;
   box-sizing: border-box;
