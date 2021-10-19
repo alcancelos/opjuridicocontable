@@ -59,16 +59,12 @@ nav {
     padding-top: 4px; 
     padding-bottom: 4px;
     border-bottom: 1px solid black; 
-    /* Gradient */
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9e190f+0,600101+100 */
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#090997+0,00dddd+100 */
-background: #090997; /* Old browsers */
-background: -moz-linear-gradient(top,  #090997 0%, #00dddd 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #090997 0%,#00dddd 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #090997 0%,#00dddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090997', endColorstr='#00dddd',GradientType=0 ); /* IE6-9 */
-
-
+    /* Gradiente de la barra de navegacion*/
+    background: #090997; /* Old browsers */
+    background: -moz-linear-gradient(top,  #090997 0%, #00dddd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #090997 0%,#00dddd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #090997 0%,#00dddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090997', endColorstr='#00dddd',GradientType=0 ); /* IE6-9 */
 }
 
 nav a{
@@ -100,17 +96,14 @@ nav a:hover{
     text-shadow: none;
     /* Sombra de los botones */
     box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb351+0,ea8520+100 */
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#73f8f1+0,ffffff+100 */
-background: #73f8f1; /* Old browsers */
-background: -moz-linear-gradient(top,  #73f8f1 0%, #ffffff 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #73f8f1 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #73f8f1 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73f8f1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-
-
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    /* Gradiente */
+    background: #73f8f1; /* Old browsers */
+    background: -moz-linear-gradient(top,  #73f8f1 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #73f8f1 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #73f8f1 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73f8f1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 .Activo{
@@ -127,8 +120,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73f8f1', end
 /*     Pie de Página            */
 /* ---------------------------- */
 footer{
-    background-color: var(--MarronFav);
-    
+    background-color: var(--MarronFav);    
     clear: both;
     color: aliceblue;
     padding: 0.5em 0;
@@ -136,17 +128,12 @@ footer{
     text-align: center;
 }
 
-
-
-
 main{
   box-sizing: border-box;
-  width: 100%;
-  
+  width: 100%; 
 }
 
 main .intro{
-  
   background-image: url(../img/fondo.jpg);
   padding: 10px;
   -webkit-background-size: cover;
@@ -158,59 +145,6 @@ main .intro{
  img.ImagenTarjeta{
   width: 100%;
 }
-
-/*
-main .Tarjeta1{
-  width: 50%;
-    height: 450px;
-    float: left;
-    background-color: rgb(142, 241, 236);
-    padding: 10px;
-    box-sizing: border-box;
-    border-top: 2px black solid;
-    border-right: 2px black solid;
-    border-bottom: 2px black solid;
-
-
-  transition:all 0.3s ease;
-
-
-}
-
-.Tarjeta1 .ContenidoTarjeta{
-  display: none;
-  transition: all 0.8s ease;
-}
-
-.Tarjeta1:hover .ContenidoTarjeta{
-display: block; 
-
-}*/
-
-/* main .Tarjeta2{
-  width: 50%;
-    height: 450px;
-    float: right;
-    background-color: rgb(142, 241, 236);
-    padding: 10px;
-    box-sizing: border-box;
-    border-top: 2px black solid;
-   
-    border-bottom: 2px black solid;
-
-     margin-top: 20px; 
-  transition:all 0.3s ease;
-
-
-} */
-
-/* .Tarjeta2 h3{
-    text-align: center;
-}
-.Tarjeta1 h3{
-    text-align: center;
-} */
-
 
 .Bienvenidos{
   width: 90%;
