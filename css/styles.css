@@ -216,7 +216,7 @@ filter: drop-shadow(-12px 14px 9px #000000);
   margin-left: 2.25%;
   box-sizing: border-box;
   text-align: center;
-  
+  transition:all 0.8s ease;   
  /* Gradiente*/
  background: #87e0fd; /* Old browsers */
 background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #06a9db 100%); /* FF3.6-15 */
@@ -236,6 +236,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', end
 
 }
 
+.Persona:hover img{
+  -webkit-transform:scale(1.2);transform:scale(1.2);
+}
 .Persona img{
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -304,6 +307,10 @@ background: -webkit-linear-gradient(top,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); 
 background: linear-gradient(to bottom,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', endColorstr='#43bdf9',GradientType=0 ); /* IE6-9 */
 
+}
+
+.Servicio:hover .ImagenServicio img{
+  transform: rotate(-5deg);
 }
 
 .Servicio .Info{
