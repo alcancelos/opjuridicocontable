@@ -204,17 +204,19 @@ filter: drop-shadow(-12px 14px 9px #000000);
 
 .Personas{
   overflow: hidden;
+  
 }
 
 .Persona{
   width: 30%;
+  height: 100%;
   border: 1px solid var(--MarronFav);
   border-radius: 0.25em;
   float: left;
   margin-left: 2.25%;
   box-sizing: border-box;
   text-align: center;
-  transition:all 0.8s ease;  
+  
  /* Gradiente*/
  background: #87e0fd; /* Old browsers */
 background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #06a9db 100%); /* FF3.6-15 */
@@ -377,8 +379,11 @@ box-sizing: border-box;
 }
 @media screen and (max-width: 600px){
 
+  
   .Persona{
-    width: 100%;
+    width: 96%;
+    margin-bottom: 15px;
+    margin-top: 15pxS;
   }
   .Servicio .ImagenServicio{
     width: 100%;
