@@ -290,7 +290,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', end
   padding: 1em;
   overflow: hidden;
   box-sizing: border-box;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,06a9db+100 */
+  /* Gradiente*/
   background: #87e0fd; /* Old browsers */
   background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #06a9db 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* Chrome10-25,Safari5.1-6 */
@@ -300,7 +300,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', end
 }
 
 .Servicio:hover{
-   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7afffc+0,62cbfc+44,43bdf9+100 */
+  /* Gradiente*/
 background: #7afffc; /* Old browsers */
 background: -moz-linear-gradient(top,  #7afffc 0%, #62cbfc 44%, #43bdf9 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); /* Chrome10-25,Safari5.1-6 */
