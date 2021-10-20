@@ -1,7 +1,9 @@
 /*Variables globales*/
 :root{
-    --MarronFav: rgb(9, 9, 151);
+    --ColorFav: rgb(9, 9, 151);
 }
+
+/* Body */
 body{
     background-color: rgb(184, 188, 204);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,21 +11,21 @@ body{
 
 /* Caja principal de tamaño 800pixeles */
 #Contenido{
-    background-color: rgb(139, 223, 235);
-    
+    background-color: rgb(139, 223, 235);    
     padding-top: 0px;
     width: 800px;  
     border-radius: 10px;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    border:2px solid black;
-    
+    border:2px solid black;    
 }
+
+/*            HEADER                       */
+/* --------------------------------------- */
 
 header{
   background-color: rgb(9, 9, 151);
-  /* padding: 1em 0; */
   height: 80px;
 }
 
@@ -47,15 +49,14 @@ nav {
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 18px;
-    background-color: var(--MarronFav);
+    background-color: var(--ColorFav);
     text-align: center;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     box-sizing: border-box;
-    height: 30px;
-    
+    height: 30px;  
     padding-top: 4px; 
     padding-bottom: 4px;
     border-bottom: 1px solid black; 
@@ -76,13 +77,6 @@ nav a{
     padding-right: 8px; 
 }
 
-a{
-    color: aliceblue;
-}
-
-a:hover{
-    color: rgb(63, 46, 22);
-}
 nav a:hover{
     color: rgb(63, 46, 22);
     background-color: rgb(115, 248, 241);
@@ -113,6 +107,7 @@ nav a:hover{
   text-shadow: 6px 2px 7px rgba(0,0,0,0.95);
 }
 
+/* El boton del Dropdown menu esta oculto por defecto */
 .dropbtn{
     display: none;
 }
@@ -120,7 +115,7 @@ nav a:hover{
 /*     Pie de Página            */
 /* ---------------------------- */
 footer{
-    background-color: var(--MarronFav);    
+    background-color: var(--ColorFav);    
     clear: both;
     color: aliceblue;
     padding: 0.5em 0;
@@ -128,14 +123,15 @@ footer{
     text-align: center;
     border-top: #000000 2px solid;
     /* Gradiente del footer */
-background: #5f74af; /* Old browsers */
-background: -moz-linear-gradient(top,  #5f74af 0%, #090997 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #5f74af 0%,#090997 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #5f74af 0%,#090997 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f74af', endColorstr='#090997',GradientType=0 ); /* IE6-9 */
-
+    background: #5f74af; /* Old browsers */
+    background: -moz-linear-gradient(top,  #5f74af 0%, #090997 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #5f74af 0%,#090997 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #5f74af 0%,#090997 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f74af', endColorstr='#090997',GradientType=0 ); /* IE6-9 */
 }
 
+/*    Main                      */
+/* ---------------------------- */
 main{
   box-sizing: border-box;
   width: 100%; 
@@ -150,20 +146,19 @@ main .intro{
     background-size: cover;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
- img.ImagenTarjeta{
+
+img.ImagenTarjeta{
   width: 100%;
 }
 
 .Bienvenidos{
   width: 90%;
- display: flex;
- justify-content: center;
- align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   margin-top: 15px;
   box-sizing: border-box;
- 
 }
 
 .Bienvenidos h3{
@@ -175,11 +170,10 @@ main .intro{
   float: right;
   padding: 5px;
   box-sizing: border-box;
-margin-bottom: 15px;
-
-filter: drop-shadow(-12px 14px 9px #000000);
--webkit-filter: drop-shadow(-12px 14px 9px #000000);
--moz-filter: drop-shadow(-12px 14px 9px #000000);
+  margin-bottom: 15px;
+  filter: drop-shadow(-12px 14px 9px #000000);
+  -webkit-filter: drop-shadow(-12px 14px 9px #000000);
+  -moz-filter: drop-shadow(-12px 14px 9px #000000);
 }
 
 .ImagenBienvenidos img{
@@ -193,6 +187,18 @@ filter: drop-shadow(-12px 14px 9px #000000);
   box-sizing: border-box;
 }
 
+.Historia{
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* Gradient */
+  background: #7afffc; /* Old browsers */
+  background: -moz-linear-gradient(top,  #7afffc 0%, #62cbfc 44%, #43bdf9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', endColorstr='#43bdf9',GradientType=0 ); /* IE6-9 */
+
+}
 
 .Historia p{
  font-size: 0.8em;
@@ -210,19 +216,19 @@ filter: drop-shadow(-12px 14px 9px #000000);
 .Persona{
   width: 30%;
   height: 100%;
-  border: 1px solid var(--MarronFav);
+  border: 1px solid var(--ColorFav);
   border-radius: 0.25em;
   float: left;
   margin-left: 2.25%;
   box-sizing: border-box;
   text-align: center;
   transition:all 0.8s ease;   
- /* Gradiente*/
- background: #87e0fd; /* Old browsers */
-background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #06a9db 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#06a9db',GradientType=0 ); /* IE6-9 */
+  /* Gradiente*/
+  background: #87e0fd; /* Old browsers */
+  background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #06a9db 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#06a9db',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -237,7 +243,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', end
 }
 
 .Persona:hover img{
-  -webkit-transform:scale(1.2);transform:scale(1.2);
+  -webkit-transform:scale(1.1);transform:scale(1.1);
 }
 .Persona img{
   border-radius: 50%;
@@ -274,15 +280,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', end
   color: #090997;
 }
 
-.Historia{
-  box-sizing: border-box;
-  padding: 10px;
-
-}
-
 .Servicio{
   width: 98%;
-  border: 1px solid var(--MarronFav);
+  border: 1px solid var(--ColorFav);
   border-radius: 0.7em;
   margin: auto;
   margin-bottom: 10px;
@@ -290,12 +290,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', end
   padding: 1em;
   overflow: hidden;
   box-sizing: border-box;
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,06a9db+100 */
-background: #87e0fd; /* Old browsers */
-background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #06a9db 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#06a9db',GradientType=0 ); /* IE6-9 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,06a9db+100 */
+  background: #87e0fd; /* Old browsers */
+  background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #06a9db 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#06a9db',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -307,10 +307,6 @@ background: -webkit-linear-gradient(top,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); 
 background: linear-gradient(to bottom,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', endColorstr='#43bdf9',GradientType=0 ); /* IE6-9 */
 
-}
-
-.Servicio:hover .ImagenServicio img{
-  transform: rotate(-5deg);
 }
 
 .Servicio .Info{
@@ -342,21 +338,15 @@ box-sizing: border-box;
 .Servicio img{
   border-radius: 0.8em;
   width: 100%;
- 
   filter: drop-shadow(-12px 14px 9px #000000);
--webkit-filter: drop-shadow(-12px 14px 9px #000000);
--moz-filter: drop-shadow(-12px 14px 9px #000000);
-
+  -webkit-filter: drop-shadow(-12px 14px 9px #000000);
+  -moz-filter: drop-shadow(-12px 14px 9px #000000);
   box-sizing: border-box;
- 
 }
-
-
 
  .Servicio:nth-child(even) .ImagenServicio{
   float: right;
-  /* margin: 0 0 0 1em; */
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .Servicio:nth-child(even) .Info{
@@ -364,57 +354,35 @@ box-sizing: border-box;
 }
 
 .Servicio:nth-child(odd) .ImagenServicio{
- 
   float: left;
-  /* margin: 0 1em 0 0; */
    box-sizing: border-box;
 }
 
 .Servicio:nth-child(odd) .Info{
   float: right;
 } 
-/* ************************************************************** */
 
+
+/* ************************************************************** */
+/* MEDIA QUERIES *************************************************/
 
 @media screen and (max-width: 799px){
 
 /* El contenido lo ajusto al 100% */
 #Contenido{
-    width: 90%;
+    width: 100%;
 }
 
+/* Pantallas mas chicas */ 
+/* menos de 700px ya se tiene que mostrar el dropdown menu porque la botonera no entra*/
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 
-  
-  .Persona{
-    width: 96%;
-    margin-bottom: 15px;
-    margin-top: 15pxS;
-  }
-  .Servicio .ImagenServicio{
-    width: 100%;
-
-  }
-
-  .Servicio .Info{
-    width: 100%;
-  }
-
-   .Bienvenidos{
-    display: block;
-  }
-  
-  .ImagenBienvenidos{
-    width: 100%;
-  }
-  .TextoBienvenidos{width: 100%;}
-
-  /* Dropdown Content (Hidden by Default) */
+  /* Dropdown Content (oculto por defecto) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--MarronFav);
+  background-color: var(--ColorFav);
   border: solid black 2px;
   border-radius: 10px;
   min-width: 160px;
@@ -423,17 +391,17 @@ box-sizing: border-box;
   animation-duration: 0.2s;
   animation-name: slidein;
   background: #090997; /* Old browsers */
-background: -moz-linear-gradient(top,  #090997 0%, #00dddd 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #090997 0%,#00dddd 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #090997 0%,#00dddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090997', endColorstr='#00dddd',GradientType=0 ); /* IE6-9 */
+  background: -moz-linear-gradient(top,  #090997 0%, #00dddd 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #090997 0%,#00dddd 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #090997 0%,#00dddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090997', endColorstr='#00dddd',GradientType=0 ); /* IE6-9 */
 }
+
+/*Animacion del dropdown menu*/
 @keyframes slidein {
   from {
-    margin-left: -100px;
-    
+    margin-left: -100px;   
   }
-
   to {
    margin-left: 0;
   }
@@ -469,8 +437,8 @@ nav a:hover{
     border-radius: 10px;
     /* Sombra de los botones */
     box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -489,13 +457,11 @@ nav a:hover{
 /* contenedor del dropdown */
 .dropdown {
   position: relative;
-  display: inline-block;
-   
+  display: inline-block;  
 }
 
 /* Links adentro del dropdown */
 .dropdown-content a {
-  
   padding: 4px 8px;
   text-decoration: none; 
   display: block;
@@ -504,13 +470,38 @@ nav a:hover{
 
 /* Muestra el dropdown */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: block;  
+}
+
+}
+
+/* menos de 600 px acomodo algunas cajas para que ocupen el 100% */
+@media screen and (max-width: 600px){
+
+
+  .Persona{
+    width: 96%;
+    margin-bottom: 15px;
+    margin-top: 15pxS;
+  }
+  .Servicio .ImagenServicio{
+    width: 100%;
+
+  }
+
+  .Servicio .Info{
+    width: 100%;
+  }
+
+   .Bienvenidos{
+    display: block;
+  }
   
+  .ImagenBienvenidos{
+    width: 100%;
+  }
+  .TextoBienvenidos{width: 100%;}
 }
-
-}
-
-
 
 
 
