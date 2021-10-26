@@ -498,7 +498,8 @@ nav a:hover{
 @media screen and (max-width: 600px){
 
   .galeria .foto{
-  width: 95%;}
+  width: 95%;
+box-sizing: border-box;}
 
   .Persona{
     width: 96%;
