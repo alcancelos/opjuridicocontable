@@ -497,6 +497,8 @@ nav a:hover{
 /* menos de 600 px acomodo algunas cajas para que ocupen el 100% */
 @media screen and (max-width: 600px){
 
+  .galeria .foto{
+  width: 95%;}
 
   .Persona{
     width: 96%;
