@@ -135,6 +135,8 @@ footer{
 main{
   box-sizing: border-box;
   width: 100%; 
+  text-align: center;
+  position: relative;
 }
 
 main .intro{
@@ -361,6 +363,23 @@ box-sizing: border-box;
 .Servicio:nth-child(odd) .Info{
   float: right;
 } 
+
+/* Galería de Fotos */
+
+
+
+.galeria .foto{
+  width: 45%;
+  float: left;
+  border: 1px solid blue;
+  padding: 0.3em;
+  margin: 2% 0 1% 2%;
+}
+
+.galeria .foto img{
+  width: 100%;
+}
+
 
 
 /* ************************************************************** */
