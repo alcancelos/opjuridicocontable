@@ -149,6 +149,10 @@ main .intro{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+h3{
+  color: #090997;
+}
+
 img.ImagenTarjeta{
   width: 100%;
 }
@@ -369,23 +373,84 @@ box-sizing: border-box;
 
 
 .galeria .foto{
-  width: 45%;
+  width: 28%;
+  
   float: left;
   border: 1px solid blue;
-  padding: 0.3em;
-  margin: 2% 0 1% 2%;
+  /* padding: 0.3em; */
+  margin: 2% 0 1% 4%;
+  box-sizing: border-box;
+  transition:all 0.3s ease; 
 }
 
 .galeria .foto img{
   width: 100%;
+  /* Para que ocupe toda la caja */
+  display: block;
 }
 
+.foto:hover{
+  box-shadow: 0px 2px 19px 20px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 2px 19px 20px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 19px 20px rgba(0,0,0,0.75);
+filter: saturate(213%);
+-webkit-filter: saturate(213%);
+-moz-filter: saturate(213%);
+}
+
+.galeria h3{
+  color: #090997;
+}
+
+/* NOVEDADES*/
+
+.Novedades{
+  text-align: left;
+  padding: 15px;
+  
+  /* Gradiente*/
+  background: #87e0fd; /* Old browsers */
+  background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #06a9db 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #87e0fd 0%,#53cbf1 40%,#06a9db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#06a9db',GradientType=0 ); /* IE6-9 */
+
+}
+
+.Novedad{
+   border-bottom: 2px blue solid;
+   padding: 5px;
+   transition:all 0.6s ease; 
+}
+
+.Novedades .Novedad:first-child{
+  border-top:2px blue solid ;
+}
+
+.Novedad:hover{
+  /* Gradiente*/
+background: #7afffc; /* Old browsers */
+background: -moz-linear-gradient(top,  #7afffc 0%, #62cbfc 44%, #43bdf9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', endColorstr='#43bdf9',GradientType=0 ); /* IE6-9 */
+/* Shadow */
+box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
+}
 
 
 /* ************************************************************** */
 /* MEDIA QUERIES *************************************************/
 
 @media screen and (max-width: 799px){
+
+.galeria .foto{
+  width: 45%;
+box-sizing: border-box;
+margin: 2% 0 1% 3%;
+}
 
 /* El contenido lo ajusto al 100% */
 #Contenido{
