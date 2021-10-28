@@ -471,11 +471,129 @@ box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
 -moz-box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
 }
 
+/* FORMULARIO */
 
+.formulario{
+  width:50%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: left;
+  float: left;
+}
+
+.formulario h3{
+  margin-left: 40%;
+}
+
+.formulario label{
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  margin: 15px;
+  font-size: 0.9em;
+  margin-right: 30px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select{
+  
+  background-color: #43bdf9;
+  border-radius: 5px;
+  border: 1px solid blue;
+  padding: 0.4em 0.6em;
+  font-size: 0.9em;
+  width: 60%;
+}
+
+.formulario select{
+  width: auto;
+}
+.formulario .boton{
+  text-align: center;
+  margin-top: 15px;
+}
+.formulario .btn-enviar{
+width: auto;
+cursor: pointer;
+color: white;
+font-weight: 700;
+transition:all 0.6s ease; 
+/* Gradiente de la barra de navegacion*/
+    background: #090997; /* Old browsers */
+    background: -moz-linear-gradient(top,  #090997 0%, #00dddd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #090997 0%,#00dddd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #090997 0%,#00dddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090997', endColorstr='#00dddd',GradientType=0 ); /* IE6-9 */
+}
+
+.formulario .btn-enviar:hover{
+  color: #000000;
+   
+    border: 2px solid;
+    border-color: black;
+    border-radius: 10px;
+    text-shadow: none;
+    /* Sombra de los botones */
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  /* Gradiente */
+    background: #73f8f1; /* Old browsers */
+    background: -moz-linear-gradient(top,  #73f8f1 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #73f8f1 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #73f8f1 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73f8f1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+.formulario textarea{
+  height: 10em;
+  resize: none;
+}
+
+.infoContacto{
+width: 50%;
+box-sizing: border-box;
+float: left;
+
+text-align: center;
+padding: 10px;
+
+}
+
+.infoContacto p{
+  padding: 10px;
+  font-size: 0.8em;
+  
+}
+
+.card{
+  margin-top: 25%;
+  border: 1px solid blue;
+  border-radius: 10px;
+  /* Gradiente*/
+background: #7afffc; /* Old browsers */
+background: -moz-linear-gradient(top,  #7afffc 0%, #62cbfc 44%, #43bdf9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #7afffc 0%,#62cbfc 44%,#43bdf9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7afffc', endColorstr='#43bdf9',GradientType=0 ); /* IE6-9 */
+/* Shadow */
+box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
+}
 /* ************************************************************** */
 /* MEDIA QUERIES *************************************************/
 
 @media screen and (max-width: 799px){
+
+.formulario{
+  width: 55%;
+}
+
+.infoContacto{
+width: 45%;}
 
 .galeria .foto{
   width: 45%;
@@ -498,6 +616,17 @@ margin: 2% 0 2% 3%;
 }
 @media screen and (max-width: 700px){
 
+  .formulario{
+  width: 100%;
+}
+
+.infoContacto{
+width: 100%;
+text-align: center;
+}
+.infoContacto .card{
+  margin-top:auto;
+}
   /* Dropdown Content (oculto por defecto) */
 .dropdown-content {
   display: none;
@@ -598,6 +727,20 @@ nav a:hover{
 /* menos de 600 px acomodo algunas cajas para que ocupen el 100% */
 @media screen and (max-width: 600px){
 
+  .formulario{
+  width: 100%;
+  float: none;
+  margin-bottom: 0;
+}
+
+.infoContacto{
+  
+  float:none;
+width: auto}
+
+.infoContacto .card{
+  margin-top:auto;
+}
   .galeria .foto{
   width: 95%;
 box-sizing: border-box;
