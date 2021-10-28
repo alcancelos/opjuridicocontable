@@ -738,6 +738,18 @@ nav a:hover{
   float:none;
 width: auto}
 
+.formulario input,
+.formulario textarea
+{
+  
+  
+  width: 90%;
+}
+
+.formulario label{
+  width: 90%;
+}
+
 .infoContacto .card{
   margin-top:auto;
 }
