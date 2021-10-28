@@ -565,11 +565,14 @@ padding: 10px;
 .infoContacto p{
   padding: 10px;
   font-size: 0.8em;
-  
+ 
 }
 
 .card{
+  width:fit-content;
   margin-top: 25%;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid blue;
   border-radius: 10px;
   /* Gradiente*/
